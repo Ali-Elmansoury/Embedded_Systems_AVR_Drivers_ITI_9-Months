@@ -1,0 +1,37 @@
+/*#include "MDIO_cfg.h"
+#include "MDIO.h"
+
+MDIO_strPinCfg_t MDIO_PinCfg[MDIO_NUM_OF_PORTS * MDIO_NUM_OF_PINS] = {
+    {.pin = MDIO_PINA0, .dir = MDIO_enuPinDir_INPUT, .cfg = MDIO_enuPIN_INTERNAL_PULL_UP},
+    {.pin = MDIO_PINA1, .dir = MDIO_enuPinDir_INPUT, .cfg = MDIO_enuPIN_INTERNAL_PULL_UP},
+    {.pin = MDIO_PINA2, .dir = MDIO_enuPinDir_INPUT, .cfg = MDIO_enuPIN_INTERNAL_PULL_UP},
+    {.pin = MDIO_PINA3, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINA4, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINA5, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINA6, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINA7, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINB0, .dir = MDIO_enuPinDir_OUTPUT, .cfg = MDIO_enuPIN_OUTPUT},
+    {.pin = MDIO_PINB1, .dir = MDIO_enuPinDir_OUTPUT, .cfg = MDIO_enuPIN_OUTPUT},
+    {.pin = MDIO_PINB2, .dir = MDIO_enuPinDir_OUTPUT, .cfg = MDIO_enuPIN_OUTPUT},
+    {.pin = MDIO_PINB3, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINB4, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINB5, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINB6, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINB7, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC0, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC1, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC2, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC3, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC4, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC5, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC6, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PINC7, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND0, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND1, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND2, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND3, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND4, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND5, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND6, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT},
+    {.pin = MDIO_PIND7, .dir = MDIO_enuPinDir_UNASSIGNED, .cfg = MDIO_enuPIN_INPUT}
+};*/
