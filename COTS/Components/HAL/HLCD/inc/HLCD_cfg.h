@@ -6,7 +6,7 @@
 #define HLCD_NUM_OF_DATA_BITS   8
 #define HLCD_NUM_OF_CTRL_BITS  3
 
-#define HLCD_NUM_OF_LCDs        1
+#define HLCD_NUM_OF_LCDs        2
 #define HLCD_LCD1               0
 #define HLCD_LCD2               1
 
@@ -39,6 +39,9 @@
 #define HLCD_CMD_CLEAR_DISPLAY                      (0b00000001)  // Clear Display
 #define HLCD_CMD_RETURN_HOME                        (0b00000010)  // Return Home
 
+#define HLCD_DDRAM_ADDRESS_MASK                     (0x80)
+#define HLCD_CGRAM_ADDRESS_MASK                     (0x40)
+
 typedef struct
 {
     union {
@@ -52,15 +55,18 @@ typedef struct
             u8 HLCD_PIN_D6;
             u8 HLCD_PIN_D7;
         };
-        u8 HLCD_arrDataPins[HLCD_NUM_OF_DATA_BITS];
-
+        u8 HLCD_arrDataPins[HLCD_NUM_OF_DATA_BITS];     
+    };
+    union
+    {
         struct {
             u8 HLCD_PIN_RS;
             u8 HLCD_PIN_RW;
             u8 HLCD_PIN_E;
         };
-        u8 HLCD_arrControlPins[HLCD_NUM_OF_CTRL_BITS];        
+        u8 HLCD_arrControlPins[HLCD_NUM_OF_CTRL_BITS];   
     };
+    
 }HLCD_strLCDPins_t;
 
 typedef struct

@@ -39,9 +39,21 @@
 #define HLCD_PIND6 0x36
 #define HLCD_PIND7 0x37
 
+#define HLCD_MAX_Y_INDEX        16
+#define HLCD_MAX_LCD_INDEX      32
+
+
+#define HLCD_MAX_BLOCK_NUMBER   8
+
 typedef enum {
     HLCD_enuErrorStatus_NOK,
-    HLCD_enuErrorStatus_OK
+    HLCD_enuErrorStatus_OK,
+    HLCD_enuErrorStatus_INVALID_LCD_NUM,
+    HLCD_enuErrorStatus_INVALID_X_ONE_LINE_CONFIG,
+    HLCD_enuErrorStatus_INVALID_Y,
+    HLCD_enuErrorStatus_INVALID_X,
+    HLCD_enuErrorStatus_INVALID_BLOCK_NUM,
+    HLCD_enuErrorStatus_INVALID_STRING_LEN
 }HLCD_enuErrorStatus_t;
 
 typedef enum {
@@ -89,12 +101,12 @@ typedef enum {
     HLCD_enuDisplayShift_Shifts
 }HLCD_enuDisplayShift_t;
 
-HLCD_enuErrorStatus_t HLCD_enuInit(void);
+void HLCD_vInit(void);
 HLCD_enuErrorStatus_t HLCD_enuWriteData(u8 Copy_u8LCDNum, u8 Copy_u8Data);
 HLCD_enuErrorStatus_t HLCD_enuWriteCommand(u8 Copy_u8LCDNum, u8 Copy_u8Command);
 HLCD_enuErrorStatus_t HLCD_enuGotoXY(u8 Copy_u8LCDNum, u8 Copy_u8X, u8 Copy_u8Y);
-HLCD_enuErrorStatus_t HLCD_enuWriteSpecialChar(u8 Copy_u8LCDNum, u8* Addr_pattern, u8 Copy_u8BlockNumber);
-HLCD_enuErrorStatus_t HLCD_enuWriteString(u8 Copy_u8LCDNum, u16* Addr_str);
-HLCD_enuErrorStatus_t HLCD_enuWriteNumber(u8 Copy_u8LCDNum, u16 Copy_u16Number);
+HLCD_enuErrorStatus_t HLCD_enuWriteSpecialChar(u8 Copy_u8LCDNum, u8* Addr_pattern, u8 Copy_u8BlockNumber, u8 Copy_u8X, u8 Copy_u8Y);
+HLCD_enuErrorStatus_t HLCD_enuWriteString(u8 Copy_u8LCDNum, const char* Addr_str);
+HLCD_enuErrorStatus_t HLCD_enuWriteNumber(u8 Copy_u8LCDNum, u64 Copy_u64Number);
 
 #endif //HLCD_H
