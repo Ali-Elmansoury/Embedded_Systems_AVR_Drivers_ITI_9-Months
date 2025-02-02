@@ -4,7 +4,13 @@
 
 ### **Table of Contents**
 
-1. [Embedded_AVR_Drivers](Embedded_AVR_Drivers/)
+1. [MCAL/MDIO](COTS/Components/MCAL/MDIO/)
+2. [MCAL/MPORT](COTS/Components/MCAL/MPORT/)
+3. [HAL/HLED](COTS/Components/HAL/HLED/)
+4. [HAL/HSWITCH](COTS/Components/HAL/HSWITCH/)
+5. [HAL/HSEVEN_SEG](COTS/Components/HAL/HSEVEN_SEG/)
+6. [HAL/HLCD](COTS/Components/HAL/HLCD/)
+7. [Labs](COTS/APP/)
 
 ---
 
