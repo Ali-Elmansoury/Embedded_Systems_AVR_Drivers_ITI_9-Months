@@ -10,7 +10,8 @@
 4. [HAL/HSWITCH](COTS/Components/HAL/HSWITCH/)
 5. [HAL/HSEVEN_SEG](COTS/Components/HAL/HSEVEN_SEG/)
 6. [HAL/HLCD](COTS/Components/HAL/HLCD/)
-7. [Labs](COTS/APP/)
+7. [HAL/HKEYPAD](COTS/Components/HAL/HKEYPAD/)
+8. [Labs](COTS/APP/)
 
 ---
 
