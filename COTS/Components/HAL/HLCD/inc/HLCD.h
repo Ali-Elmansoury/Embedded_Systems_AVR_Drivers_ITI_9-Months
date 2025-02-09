@@ -42,6 +42,8 @@
 #define HLCD_MAX_Y_INDEX        16
 #define HLCD_MAX_LCD_INDEX      32
 
+#define HLCD_MAX_X_INDEX        2
+
 
 #define HLCD_MAX_BLOCK_NUMBER   8
 

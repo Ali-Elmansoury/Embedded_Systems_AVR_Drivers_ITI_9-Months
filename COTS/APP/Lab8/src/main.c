@@ -19,12 +19,19 @@ int main(void)
         if (key == 0)
         {
             HLCD_enuWriteCommand(HLCD_LCD1, HLCD_CMD_CLEAR_DISPLAY);
-            HLCD_enuWriteString(HLCD_LCD1, "Hello, ES Inatke 45");
+            _delay_ms(500);
+            HLCD_enuWriteString(HLCD_LCD1, "Hello, ES Inatke 45, 2e3wa elflaaa");
+            HLCD_enuWriteString(HLCD_LCD1, "aaaaa");
+            key = 20;
+        }
+        if (key == 1)
+        {
+            // HLCD_enuWriteString(HLCD_LCD1, "2ew3a elfla7a");
             key = 20;
         }
         else if (key != 20)
         {
-            HLCD_enuWriteCommand(HLCD_LCD1, HLCD_CMD_CLEAR_DISPLAY);
+            // HLCD_enuWriteCommand(HLCD_LCD1, HLCD_CMD_CLEAR_DISPLAY);
             HLCD_enuWriteNumber(HLCD_LCD1, key);
             key = 20;
         }
